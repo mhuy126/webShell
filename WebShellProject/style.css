@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+body {
+  width: 1000px;
+  height: 80vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  flex: 5;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.homeBtn {
+  text-decoration: none;
+}
+
+.loginForm {
+  width: max-content;
+  height: 20vh;
+}
+
+label {
+  width: 150px;
+  margin-top: 5px;
+  display: inline-block;
+  /* text-align: right; */
+}
+
+button {
+  position: relative;
+  bottom: 0;
+  padding: 2px;
+  border: 1px solid black;
+}
+
+/* .uname,
+.passwd {
+  display: inline-block;
+} */
+
+.user-bar {
+  display: inherit;
+  flex: 1;
+}
+
+.unsetBtn {
+  margin-left: 2px;
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+table {
+  width: 800px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}
+
+.passwd {
+  position: relative;
+}
+
+.passwd::before {
+  content: "&nbsp";
+  visibility: hidden;
+}
+
+.passwd span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addUserBtn {
+  width: 150px;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.addUserBtn:after {
+  content: "\02795";
+  float: right;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.collItem {
+  background-color: rgb(189, 188, 188);
+  width: max-content;
+  padding: 10px;
+  /* display: none; */
+  /* max-height: 0px; */
+  overflow: hidden;
+  /* transition: max-height 0.2s ease-in-out; */
+  /* transition: display 0.2s ease-in-out; */
+}
+
+.loginBtn,
+.addBtn,
+.editBtn {
+  float: right;
+  margin-top: 5px;
+}
+
+.editUsersForm {
+  width: max-content;
+}
+
+/* Profile */
+.profile {
+  margin-top: 10vh;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+}
+.avatar {
+  flex: 50%;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid cyan; */
+}
+
+img {
+  display: block;
+  margin: auto;
+  /* margin-top: 20px; */
+  width: 50%;
+}
+
+.info {
+  flex: 50%;
+  line-height: 3;
+  font-size: 20px;
+}
+
+.editProfile {
+  flex: 50%;
+  display: none;
+  line-height: 2;
+  font-size: 20px;
+}
